@@ -10,12 +10,83 @@ header{
     background-color: #3089fa;
     color: white;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
+
 .header{
     margin: auto;
+    text-align: center;
     font-weight: bold;
     font-size: 26px;
+    width: 700px;
+/*    border: 1px solid red;*/
 }
+
+#nav{
+    background-color: #3089fa;
+/*    border: 1px solid red;*/
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+#nav a{
+    color: black;
+}
+
+.opcoes{
+    width: 400px;
+/*    border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.check{
+    align-items: center;
+    display: flex;
+    height: 50px;
+/*    border: 1px solid red;*/
+}
+
+.opcoes a{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+
+.cadastrar{
+    background-color:  #59d12f;
+}
+
+.alterar{
+    background-color: yellow;
+}
+
+.opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+/*    border: 1px solid red;*/
+    background-color: #f6fc37;
+    padding: 2px;
+    margin: 1px;
+    min-width: 130px;
+}
+
 main{
     width: 100%;
     height: 370px;
@@ -87,6 +158,39 @@ main{
     height: 200px;
     background-color: black;
     
+}
+
+.index{
+    background-color:#3089fa;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    height: 300px;
+    min-width: 400px;
+/*    background-color: grey;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form input{
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    height: 40px;
+}
+
+form h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.submit{
+    background-color: #a6ccfe;
 }
 
 /* responsivo */
