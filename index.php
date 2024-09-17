@@ -8,7 +8,8 @@
 </head>
 <body >
     <div class="index">
-    <form action="home.php">
+    <form method="post" action="valida.php">
+        
         <h1>Bem vindo(a) de volta!</h1>
         <input type="text" name="login" placeholder="Login: ">
         <input type="password" name="senha" placeholder="Senha: ">

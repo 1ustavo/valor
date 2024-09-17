@@ -1,5 +1,9 @@
 <?php 
+session_start();
     include 'header.php';
+    if (!isset($_SESSION['admin'])){
+        header('location:index.php');
+    }
  ?>
     <!-- Começo main -->
     <main>
