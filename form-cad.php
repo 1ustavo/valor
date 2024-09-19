@@ -10,7 +10,7 @@ session_start();
 <main style="background-color:#262626">
     <div class="opcoes">
 
-        <form style="background-color: #c7cacb;">
+        <form style="background-color: #c7cacb;" method="post" action="envia-cadastro.php">
             <h1>Cadastre Suas Contas</h1>
             <input type="text" name="nome-conta" placeholder="Qual  conta?: ">
             <input type="text" name="valor" placeholder="Qual o valor?: ">
