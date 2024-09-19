@@ -1,7 +1,7 @@
 <?php 
 session_start();
     include 'header.php';
-    if (!isset($_SESSION['admin'])){
+    if (!isset($_SESSION['logado'])){
         header('location:index.php');
     }
  ?>

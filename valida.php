@@ -7,8 +7,10 @@ $senha = 1234;
 // echo $_POST['senha'];
 
 if ($usuario == $_POST['login'] && $senha == $_POST['senha']){
-    $_SESSION['admin']=1;
- header('location:home.php');
+    $_SESSION['logado']=1;
+    // $_SESSION['nome']=$usuario;
+    // var_dump($_SESSION);
+    header('location:home.php');
 }
 else {
 header('location:index.php');

@@ -19,7 +19,7 @@
         <a href="adm.php"><div class="opt">
             Administração
         </div></a>
-        <a href="logoff.php"><div class="opt">
+        <a href="sair.php"><div class="opt">
             Sair
         </div></a>
     </div>

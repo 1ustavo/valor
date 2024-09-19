@@ -1,6 +1,9 @@
 <?php 
 session_start();
     include 'header.php';
+    if (!isset($_SESSION['logado'])){
+        header('location:index.php');
+    }
  ?>
     <main style="background-color:#262626">
 
