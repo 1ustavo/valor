@@ -1,5 +1,6 @@
 <?php 
 session_start();
+    include 'conexao.php';
     include 'header.php';
     if (!isset($_SESSION['logado'])){
         header('location:index.php');
@@ -9,7 +10,16 @@ session_start();
     <main>
     <div class="blocos">
         <div class="bloco-info" style="background-color:#C70039 ;">
-        <p class="bloco-text">CONTAS VENCIDAS</p>
+        <div class="bloco-text">CONTAS VENCIDAS</div><br><br>
+        
+
+        <?php 
+            $consulta = $con->query("SELECT * FROM contas");
+            while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)){?>
+        
+            <div class="contas"> <?php echo $exibe['nome'];?>-<?php echo $exibe['valor'];?>-<?php echo $exibe['vencimento'];?></div>
+            <?php   };
+        ?>
         </div>
         <div class="bloco-info" style="background-color: #FFC300 ;">
         <p class="bloco-text" style="color: black;">PROXIMOS VENCIMENTOS</p>
