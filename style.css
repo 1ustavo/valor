@@ -104,13 +104,19 @@ main{
     /* text-align: center; */
     
     }
+    .contas{
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+    }
 .bloco-info{
     margin: auto;
     width: 18%;
     height: 280px;
     /* border: 1px solid red; */
-    display: flex;
+    /* display: flex; */
     text-align: center;
+    /* flex-direction: column; */
     
 }
 #bloco-infoM{
@@ -120,7 +126,8 @@ main{
 .bloco-text{
     color: white;
     font-weight: bold;
-    display: flex;
+    font-size: 23px;
+    /* display: flex; */
     width: 100%;
     justify-content: center;
     margin-top:10px ;
