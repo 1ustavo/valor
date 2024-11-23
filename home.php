@@ -25,7 +25,12 @@ session_start();
         <p class="bloco-text" style="color: black;">PROXIMOS VENCIMENTOS</p>
         </div>
         <div class="bloco-info" style="background-color: #044ca7 ;">
-        <p class="bloco-text">ULTIMOS PAGAMENTOS RECEBIDOS</p>  
+        <p class="bloco-text">ULTIMOS PAGAMENTOS RECEBIDOS</p> 
+        <?php $consulta1 = $con->query("SELECT * FROM valor_recebido");
+        while($exibe = $consulta1->fetch(PDO::FETCH_ASSOC)){?>
+            <div class="contas"> <?php echo $exibe['tipo'];?>-<?php echo $exibe['valor'];?>-<?php echo $exibe['data'];?></div>
+        <?php };
+        ?>
         </div>
         <div class="bloco-info" id="bloco-infoM" style="background-color: #3fa704 ;">
         <p class="bloco-text">COFRE</p>
