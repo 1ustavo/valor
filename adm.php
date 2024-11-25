@@ -9,18 +9,18 @@ session_start();
 
         <div class="opcoes">
 
-        <a class="cadastrar" href="form-cad.php">
-            Cadastrar Ganhos
+        <a class="cadastrar" href="form-cadganhos.php">
+            Cadastrar Pagamentos
         </a>
-        <a class="alterar" href="form-cad.php">
-             Alterar / Excluir Ganhos
+        <a class="alterar" href="lista-pag.php">
+             Alterar / Excluir Pagamentos
         </a>
            
         <a class="cadastrar" href="form-cad.php">
-            Cadastrar Gastos
+            Cadastrar Contas
         </a>
         <a class="alterar" href="form-cad.php">
-             Alterar / Excluir Gastos
+             Alterar / Excluir Contas
         </a>
         
         </div>
