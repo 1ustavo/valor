@@ -19,7 +19,7 @@ session_start();
         <a class="cadastrar" href="form-cad.php">
             Cadastrar Contas
         </a>
-        <a class="alterar" href="form-cad.php">
+        <a class="alterar" href="lista-contas.php">
              Alterar / Excluir Contas
         </a>
         

@@ -13,25 +13,28 @@
                 <!-- tr = table row = linha da tabela -->
                 <tr> 
                     <!-- th = table header = celulas de cabeçalhos -->
-                    <th>TIPO</th>
+                    <th>ID</th>
+                    <th>NOME</th>
                     <th>VALOR</th>
                     <th>DATA</th>
                     <th>OPÇÕES</th>
+
                 </tr>
             </thead>
                 <tbody>
                     <!-- corpo da tabela -->
                 <?php
-                $consulta = $con->query("SELECT * FROM valor_recebido");
+                $consulta = $con->query("SELECT * FROM contas");
                 while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)){?>
                     <tr>
                         <!-- table data = dados -->
-                        <td><?php echo $exibe['tipo'];?></td>
+                        <td><?php echo $exibe['id'];?></td>
+                        <td><?php echo $exibe['nome'];?></td>
                         <td><?php echo $exibe['valor'];?></td>
-                        <td><?php echo $exibe['data'];?></td>
+                        <td><?php echo $exibe['vencimento'];?></td>
                         <td>
-                            <div class="botoes"><a class="botao botaovermelho" href="form-alterar.php?id=<?php echo $exibe['id'];?>">ALTERAR</a>
-                            <a class="botao botaolaranja" href="excluir.php?id=<?php echo $exibe['id'];?>">EXCLUIR</a>
+                            <div class="botoes"><a class="botao botaovermelho" href="form-alterarcontas.php?id=<?php echo $exibe['id'];?>">ALTERAR</a>
+                            <a class="botao botaolaranja" href="excluir-contas.php?id=<?php echo $exibe['id'];?>">EXCLUIR</a>
                             </div>
                         </td>
                         
