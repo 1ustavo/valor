@@ -5,7 +5,6 @@ include 'conexao.php';
 if(!isset($_SESSION['logado'])){
     header('location:index.php');
 }
-
 $id = $_GET['id'];
 $nome = $_POST['nome-conta'];
 $valor = $_POST['valor'];
@@ -16,5 +15,12 @@ if(isset($_POST['recorrente']) &&  $_POST['recorrente'] == 'on'){
     }else{
         $recorrente = 0;
     }
-var_dump($_POST);
+try{
+    $alterar = $con->query("UPDATE contas SET nome = '$nome', valor = '$valor', cadastro = '$cadastro', vencimento = '$vencimento', recorrente = '$recorrente' WHERE id = '$id' ");
+    header('location:lista-contas.php');
+}catch(
+    PDOException $e){   
+        echo $e->getMessage();
 
+}
+    
